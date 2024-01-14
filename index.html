@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stopwatch App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="styling.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Instrument+Serif:ital@0;1&family=Kalam:wght@300;400;700&family=Lemon&family=Pacifico&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Title-->
+    <div class="container-fluid">
+        <div class="watchbox">
+            <div id="header">Stopwatch</div>
+
+            <!--Lap Time-->
+            <div id="lap"><span id="lapminute">00</span>:<span id="lapsecond">00</span>:<span
+                    id="lapcentisecond">00</span></div>
+
+            <!--Time-->
+            <div id="time"><span id="timeminute">00</span>:<span id="timesecond">00</span>:<span
+                    id="timecentisecond">00</span></div>
+
+            <!--Controls-->
+            <div id="controlsContainer" >
+                <div class="row">
+                    <div id="startButton" class="control ">
+                        Start
+                    </div>
+                    
+                    <div id="stopButton" class="control ">
+                        Stop
+                    </div>
+                    
+                    <div id="resumeButton" class="control ">
+                        Resume
+                    </div>
+                </div>
+                
+                <div class="col-sm">
+                    
+                    <div id="lapButton" class="control ">
+                        Lap
+                    </div>
+                    
+                    <div id="resetButton" class="control ">
+                        Reset
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Laps-->
+        <div id="laps"></div>
+
+    </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="Stopwatch.js"></script>
+</body>
+
+</html>
